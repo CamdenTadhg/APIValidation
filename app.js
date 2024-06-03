@@ -26,16 +26,12 @@ app.use(function(err, req, res, next) {
 
   return res.json({
     error: err,
-    message: err.message
   });
 });
 
 
 module.exports = app;
 
-//read through code
-// create database and run data.sql file
-//use JSON Schema to validate the creation and updating of books. Display an error message containing all of the validation errors if book creation or updating fails.
 // add integration tests for all book routes with edge cases (set process.env.NODE_ENV = "test" in file
 
 //create functionality to partially update a book (not all fields)
