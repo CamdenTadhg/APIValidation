@@ -49,7 +49,6 @@ class Book {
                 year
             FROM books 
             ORDER BY title`);
-
     return booksRes.rows;
   }
 
@@ -62,7 +61,6 @@ class Book {
    * */
 
   static async create(data) {
-    console.log(data.isbn);
     const result = await db.query(
       `INSERT INTO books (
             isbn,
